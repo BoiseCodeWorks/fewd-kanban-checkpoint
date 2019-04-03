@@ -9,12 +9,13 @@
             <button @click="deleteTask">Delete</button>
         </div>
         <div class="card-footer">
-            <p>{{task.createdAt}}</p>
+            <p>{{task.createdAt | formatTime}}</p>
         </div>
     </div>
 </template>
 
 <script>
+import Moment from 'moment'
 import CommentModal from '@/components/CommentModal.vue'
 export default {
    name: "task",
@@ -39,6 +40,11 @@ export default {
    },
    components: {
        CommentModal
+   },
+   filters: {
+       formatTime(date) {
+           return Moment(String(date)).fromNow()
+       }
    }
 }
 </script>

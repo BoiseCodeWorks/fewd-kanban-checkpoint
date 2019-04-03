@@ -1,7 +1,8 @@
 <template>
   <div class="board container-fluid">
-    {{board.title}}
-    <div class="row">
+    <h5>{{board.title}}</h5>
+    <h6>{{board.description}}</h6>
+    <div class="row flex-nowrap lists-container pb-1">
       <list v-for="list in lists" :listData='list'></list>
     <form class="col-6 col-md-3 card" @submit.prevent="addList">
       <input v-model="newList.title" type="text" required placeholder="List Title">
@@ -49,3 +50,9 @@
     }
   };
 </script>
+
+<style>
+.lists-container {
+  overflow-x: scroll;
+}
+</style>

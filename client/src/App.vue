@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <div v-if="user._id" class="d-flex">
+    <div v-if="user._id" class="px-3 mb-3 d-flex justify-content-between align-items-center my-shadow">
+      <img @click="$router.push({name: 'boards'})" class="action" height="75px" src="https://www.riteaid.com/shop/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/2/021200474019_1.jpg" alt="logo">
       <button @click="logout">Logout</button>
     </div>
     <router-view />
@@ -43,5 +44,11 @@
 
   #nav a.router-link-exact-active {
     color: #42b983;
+  }
+  .action {
+    cursor: pointer;
+  }
+  .my-shadow {
+    box-shadow: 0 0 5px 1px black;
   }
 </style>

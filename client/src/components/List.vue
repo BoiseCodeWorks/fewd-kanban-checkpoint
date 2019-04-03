@@ -5,7 +5,7 @@
        <h3>{{listData.title}}</h3>
        <button @click="deleteList">Delete</button>
      </div>
-     <div class="card-body">
+     <div class="card-body tasks-container">
         <task v-for="task in tasks" :task="task"/>
         <form @submit.prevent="addTask">
           <input type="text" required v-model="newTask.title" placeholder="Add a task">
@@ -54,5 +54,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.tasks-container {
+  overflow-y: scroll;
+  max-height: 65vh;
+}
 </style>
