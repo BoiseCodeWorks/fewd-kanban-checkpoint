@@ -73,3 +73,16 @@ When wrapping up the kanban project its important that you make an app that is f
 - Add to the front and backend the ability to have collaborators on boards
 - Add Sockets to the project so any collaborator gets instant feedback when users modify a board
 - Comment authors username is next to the comment
+
+## Legal Overview
+
+The content under the CodeWorks®, LLC Organization and all of the individual repos are soley intended for use by CodeWorks Instruction to deliver Educational content to CodeWorks Students.
+
+---
+
+## Copyright
+
+© CodeWorks® LLC, 2021. Unauthorized use and/or duplication of this material without express and written permission from CodeWorks, LLC is strictly prohibited.
+
+
+<img src="https://bcw.blob.core.windows.net/public/img/7815839041305055" width="125">
